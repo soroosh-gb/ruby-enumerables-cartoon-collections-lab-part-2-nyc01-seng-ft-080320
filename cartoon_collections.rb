@@ -33,7 +33,7 @@ def find_valid_calls(planeteer_calls)
      x == elem 
     end
     if elem == found
-      puts found
+      return found
     end 
     i += 1 
   end 
