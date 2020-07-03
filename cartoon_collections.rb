@@ -27,13 +27,16 @@ end
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   i = 0 
-  found = nil 
   while i < valid_calls.count do
     elem = valid_calls[i]
-    planeteer_calls.find do |x|
+    found = planeteer_calls.find do |x|
      x == elem 
-     
-  
+    end
+    if elem == found
+      puts found
+    end 
+    i += 1 
+  end 
 end 
 
     
